@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises'
 import {read, plot, renderLayers, renderBoard} from '@tracespace/core'
 import { toHtml } from 'hast-util-to-html';
+import svgcode from 'svgcode';
 
 const files = [
   'all_files/Gerber_BottomLayer.GBL',
@@ -41,3 +42,9 @@ await Promise.all([
   fs.writeFile('bottom.svg', toHtml(renderBoardResult.bottom)),
 ])
 
+const gcode = svgcode()
+.loadFile("test1.svg")
+.generateGcode()
+.getGcode();
+
+fs.writeFile("test1.gcode",gcode);

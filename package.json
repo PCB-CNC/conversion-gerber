@@ -5,8 +5,12 @@
     "@tracespace/parser": "^5.0.0-alpha.0",
     "@tracespace/plotter": "^5.0.0-alpha.0",
     "@tracespace/renderer": "^5.0.0-alpha.0",
+    "canvas": "^2.11.0",
     "fs.promises": "^0.1.2",
-    "hast-util-to-html": "^8.0.4"
+    "hast-util-to-html": "^8.0.4",
+    "img2gcode": "^1.2.0",
+    "progress": "^2.0.3",
+    "svg2png": "^4.1.1"
   },
   "type": "module"
 }

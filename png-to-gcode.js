@@ -7,7 +7,6 @@ img2gcode
   .start({
     // It is mm
     toolDiameter: 0.01,
-    scaleAxes: 25.48178,
     deepStep: -1,
     whiteZ: 20,
     blackZ: -2,

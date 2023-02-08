@@ -5,7 +5,7 @@ import { toHtml } from 'hast-util-to-html';
 import sharp from 'sharp';
 
 const files = [
-  '../Gerber_BottomLayer.GBL',
+  'Gerber_BottomLayer.GBL',
 ]
 
 const readResult = await read(files)
